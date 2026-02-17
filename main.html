@@ -9,42 +9,33 @@
 <body>
 	<form action="/submit" method="post">
 
-  <label for="name">Name:</label><br>
+  <label>Name:</label>
   <input 
-    type="text" 
+    type="Text" 
     id="name" 
-    name="name" 
     minlength="3" 
-    maxlength="50" 
-    required>
+    maxlength="50" >
   <br><br>
 		
-  <label for="portfolio">Portfolio:</label><br>
+  <label>Portfolio:</label>
   <input 
-    type="url" 
+    type="URL" 
     id="portfolio" 
-    name="portfolio" 
-    required>
-  <br><br>
+    name="portfolio" >
 
-  <!-- Favorite Color -->
-  <label for="favColor">Favorite Color:</label><br>
+  <label>Favorite Color:</label>
   <input 
-    type="color" 
+    type="Color" 
     id="favColor" 
-    name="favColor">
   <br><br>
 
-  <label for="likeness">Likeness:</label><br>
+  <label>Likeness:</label>
   <input 
     type="range" 
     id="likeness" 
-    name="likeness" 
     min="1" 
-    max="100">
-  <br><br>
-
-  <input type="submit" value="Submit">
+    max="100"
+	  >
 </form>
 
     <script type="text/javascript" src="./script.js">
