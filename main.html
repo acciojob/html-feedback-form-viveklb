@@ -1,46 +1,53 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
 </head>
-
 <body>
-	<form action="/submit" method="post">
 
-  <label>Name:</label>
-  <input 
-    type="Text" 
-    id="name" 
-    minlength="3" 
-    maxlength="50" >
-  <br><br>
-		
-  <label>Portfolio:</label>
-  <input 
-    type="URL" 
-    id="portfolio" 
-    name="portfolio" >
+    <h2>Feedback Form</h2>
 
-  <label>Favorite Color:</label>
-  <input 
-    type="Color" 
-    id="favColor" 
-  <br><br>
+    <form method="post">
 
-  <label>Likeness:</label>
-  <input 
-    type="range" 
-    id="likeness" 
-    min="1" 
-    max="100"
-	  >
-</form>
+        <!-- Name -->
+        <label for="name">Name</label><br>
+        <input 
+            type="text" 
+            id="name" 
+            minlength="3" 
+            maxlength="50" 
+            required>
+        <br><br>
 
-    <script type="text/javascript" src="./script.js">
-</script>
+        <!-- Portfolio -->
+        <label for="portfolio">Portfolio</label><br>
+        <input 
+            type="url" 
+            id="portfolio" 
+            required>
+        <br><br>
+
+        <!-- Favorite Color -->
+        <label for="favColor">Favorite Color</label><br>
+        <input 
+            type="color" 
+            id="favColor">
+        <br><br>
+
+        <!-- Likeness -->
+        <label for="likeness">Likeness (1-100)</label><br>
+        <input 
+            type="range" 
+            id="likeness" 
+            min="1" 
+            max="100">
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+
+    </form>
 
 </body>
-
 </html>
